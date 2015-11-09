@@ -1,0 +1,319 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		A31AD9291BEFD1EF0091B345 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A31AD9281BEFD1EF0091B345 /* AppDelegate.swift */; };
+		A31AD92E1BEFD1EF0091B345 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A31AD92C1BEFD1EF0091B345 /* Main.storyboard */; };
+		A31AD9301BEFD1EF0091B345 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A31AD92F1BEFD1EF0091B345 /* Assets.xcassets */; };
+		A31AD9331BEFD1EF0091B345 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A31AD9311BEFD1EF0091B345 /* LaunchScreen.storyboard */; };
+		A31AD9401BEFD25C0091B345 /* PolygonPreviewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A31AD93F1BEFD25C0091B345 /* PolygonPreviewViewController.swift */; };
+		A31AD9421BEFD2660091B345 /* RegularPolygon.swift in Sources */ = {isa = PBXBuildFile; fileRef = A31AD9411BEFD2660091B345 /* RegularPolygon.swift */; };
+		A31AD9441BEFD26F0091B345 /* PolygonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A31AD9431BEFD26F0091B345 /* PolygonView.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		A31AD9251BEFD1EF0091B345 /* PolygonDrawing.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PolygonDrawing.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		A31AD9281BEFD1EF0091B345 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		A31AD92D1BEFD1EF0091B345 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		A31AD92F1BEFD1EF0091B345 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		A31AD9321BEFD1EF0091B345 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		A31AD9341BEFD1EF0091B345 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A31AD93F1BEFD25C0091B345 /* PolygonPreviewViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PolygonPreviewViewController.swift; sourceTree = "<group>"; };
+		A31AD9411BEFD2660091B345 /* RegularPolygon.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RegularPolygon.swift; sourceTree = "<group>"; };
+		A31AD9431BEFD26F0091B345 /* PolygonView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PolygonView.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		A31AD9221BEFD1EF0091B345 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		A31AD91C1BEFD1EF0091B345 = {
+			isa = PBXGroup;
+			children = (
+				A31AD9271BEFD1EF0091B345 /* PolygonDrawing */,
+				A31AD9261BEFD1EF0091B345 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		A31AD9261BEFD1EF0091B345 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				A31AD9251BEFD1EF0091B345 /* PolygonDrawing.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		A31AD9271BEFD1EF0091B345 /* PolygonDrawing */ = {
+			isa = PBXGroup;
+			children = (
+				A31AD93D1BEFD23F0091B345 /* Model */,
+				A31AD93E1BEFD23F0091B345 /* Views */,
+				A31AD9281BEFD1EF0091B345 /* AppDelegate.swift */,
+				A31AD92C1BEFD1EF0091B345 /* Main.storyboard */,
+				A31AD92F1BEFD1EF0091B345 /* Assets.xcassets */,
+				A31AD9311BEFD1EF0091B345 /* LaunchScreen.storyboard */,
+				A31AD9341BEFD1EF0091B345 /* Info.plist */,
+				A31AD93F1BEFD25C0091B345 /* PolygonPreviewViewController.swift */,
+			);
+			name = PolygonDrawing;
+			path = PolygonDrawing;
+			sourceTree = "<group>";
+		};
+		A31AD93D1BEFD23F0091B345 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				A31AD9411BEFD2660091B345 /* RegularPolygon.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		A31AD93E1BEFD23F0091B345 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				A31AD9431BEFD26F0091B345 /* PolygonView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		A31AD9241BEFD1EF0091B345 /* PolygonDrawing */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A31AD9371BEFD1EF0091B345 /* Build configuration list for PBXNativeTarget "PolygonDrawing" */;
+			buildPhases = (
+				A31AD9211BEFD1EF0091B345 /* Sources */,
+				A31AD9221BEFD1EF0091B345 /* Frameworks */,
+				A31AD9231BEFD1EF0091B345 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = PolygonDrawing;
+			productName = PolygonDrawing;
+			productReference = A31AD9251BEFD1EF0091B345 /* PolygonDrawing.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		A31AD91D1BEFD1EF0091B345 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0710;
+				LastUpgradeCheck = 0710;
+				ORGANIZATIONNAME = DaftMobile;
+				TargetAttributes = {
+					A31AD9241BEFD1EF0091B345 = {
+						CreatedOnToolsVersion = 7.1;
+					};
+				};
+			};
+			buildConfigurationList = A31AD9201BEFD1EF0091B345 /* Build configuration list for PBXProject "PolygonDrawing" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = A31AD91C1BEFD1EF0091B345;
+			productRefGroup = A31AD9261BEFD1EF0091B345 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				A31AD9241BEFD1EF0091B345 /* PolygonDrawing */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		A31AD9231BEFD1EF0091B345 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A31AD9331BEFD1EF0091B345 /* LaunchScreen.storyboard in Resources */,
+				A31AD9301BEFD1EF0091B345 /* Assets.xcassets in Resources */,
+				A31AD92E1BEFD1EF0091B345 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		A31AD9211BEFD1EF0091B345 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A31AD9421BEFD2660091B345 /* RegularPolygon.swift in Sources */,
+				A31AD9291BEFD1EF0091B345 /* AppDelegate.swift in Sources */,
+				A31AD9401BEFD25C0091B345 /* PolygonPreviewViewController.swift in Sources */,
+				A31AD9441BEFD26F0091B345 /* PolygonView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		A31AD92C1BEFD1EF0091B345 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A31AD92D1BEFD1EF0091B345 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		A31AD9311BEFD1EF0091B345 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A31AD9321BEFD1EF0091B345 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		A31AD9351BEFD1EF0091B345 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		A31AD9361BEFD1EF0091B345 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		A31AD9381BEFD1EF0091B345 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = PolygonDrawing/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.daftmobile.PolygonDrawing;
+				PRODUCT_NAME = PolygonDrawing;
+			};
+			name = Debug;
+		};
+		A31AD9391BEFD1EF0091B345 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = PolygonDrawing/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.daftmobile.PolygonDrawing;
+				PRODUCT_NAME = PolygonDrawing;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		A31AD9201BEFD1EF0091B345 /* Build configuration list for PBXProject "PolygonDrawing" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A31AD9351BEFD1EF0091B345 /* Debug */,
+				A31AD9361BEFD1EF0091B345 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A31AD9371BEFD1EF0091B345 /* Build configuration list for PBXNativeTarget "PolygonDrawing" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A31AD9381BEFD1EF0091B345 /* Debug */,
+				A31AD9391BEFD1EF0091B345 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = A31AD91D1BEFD1EF0091B345 /* Project object */;
+}

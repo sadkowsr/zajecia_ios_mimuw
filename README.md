@@ -21,7 +21,7 @@
 
 ### Zajęcia 2 (9.11.2015): UIView + Core Graphics
 
-[Polygon Drawing](#)
+[Polygon Drawing](../../tree/master/Wyklad%202/PolygonDrawing/)
 
 #### Praca domowa:
 

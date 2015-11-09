@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9059" systemVersion="15B42" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="M3w-5e-WEZ">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9049"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+    </dependencies>
+    <scenes>
+        <!--Polygon Preview View Controller-->
+        <scene sceneID="XOs-qz-TCg">
+            <objects>
+                <viewController id="M3w-5e-WEZ" customClass="PolygonPreviewViewController" customModule="TablesAndPolygons" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="bRd-Dn-y0c"/>
+                        <viewControllerLayoutGuide type="bottom" id="PJH-yA-69b"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="zYF-fN-5Qe">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view opaque="NO" contentMode="scaleToFill" placeholderIntrinsicWidth="200" placeholderIntrinsicHeight="200" translatesAutoresizingMaskIntoConstraints="NO" id="aTe-bg-sFH" customClass="PolygonView" customModule="TablesAndPolygons" customModuleProvider="target">
+                                <rect key="frame" x="112" y="112" width="376" height="376"/>
+                                <animations/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="aTe-bg-sFH" secondAttribute="height" id="9z0-Nv-L0c"/>
+                                </constraints>
+                            </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="n-sided polygon" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QCM-K6-hCN">
+                                <rect key="frame" x="209" y="42" width="182" height="30"/>
+                                <animations/>
+                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <stackView opaque="NO" contentMode="scaleToFill" spacing="60" translatesAutoresizingMaskIntoConstraints="NO" id="EIL-wY-bNA">
+                                <rect key="frame" x="240" y="508" width="121" height="72"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7oR-Hq-Ooa">
+                                        <rect key="frame" x="0.0" y="0.0" width="30" height="72"/>
+                                        <animations/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="50"/>
+                                        <state key="normal" title="-"/>
+                                        <connections>
+                                            <action selector="minusButtonPressed:" destination="M3w-5e-WEZ" eventType="touchUpInside" id="NTS-By-5us"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lZU-JH-Ysq">
+                                        <rect key="frame" x="90" y="0.0" width="31" height="72"/>
+                                        <animations/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="50"/>
+                                        <state key="normal" title="+"/>
+                                        <connections>
+                                            <action selector="plusButtonPressed:" destination="M3w-5e-WEZ" eventType="touchUpInside" id="3td-dE-Zl0"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <animations/>
+                            </stackView>
+                        </subviews>
+                        <animations/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="aTe-bg-sFH" firstAttribute="width" secondItem="zYF-fN-5Qe" secondAttribute="width" multiplier="0.8" priority="650" id="7lT-ef-P8F"/>
+                            <constraint firstItem="aTe-bg-sFH" firstAttribute="centerX" secondItem="zYF-fN-5Qe" secondAttribute="centerX" id="8AP-Oy-iVf"/>
+                            <constraint firstItem="PJH-yA-69b" firstAttribute="top" relation="greaterThanOrEqual" secondItem="EIL-wY-bNA" secondAttribute="bottom" constant="20" id="FL1-Na-P6s"/>
+                            <constraint firstItem="aTe-bg-sFH" firstAttribute="centerY" secondItem="zYF-fN-5Qe" secondAttribute="centerY" id="Pjx-Po-awn"/>
+                            <constraint firstItem="EIL-wY-bNA" firstAttribute="top" secondItem="aTe-bg-sFH" secondAttribute="bottom" priority="700" constant="20" id="Qg1-NV-Oet"/>
+                            <constraint firstAttribute="trailingMargin" relation="greaterThanOrEqual" secondItem="aTe-bg-sFH" secondAttribute="trailing" constant="20" id="VCk-ma-2SW"/>
+                            <constraint firstItem="QCM-K6-hCN" firstAttribute="top" relation="greaterThanOrEqual" secondItem="bRd-Dn-y0c" secondAttribute="bottom" constant="20" id="aK2-JI-YWb"/>
+                            <constraint firstItem="aTe-bg-sFH" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="zYF-fN-5Qe" secondAttribute="leadingMargin" constant="20" id="dBg-Hv-UlA"/>
+                            <constraint firstItem="aTe-bg-sFH" firstAttribute="top" relation="greaterThanOrEqual" secondItem="bRd-Dn-y0c" secondAttribute="bottom" constant="20" id="hzo-7I-ACw"/>
+                            <constraint firstItem="QCM-K6-hCN" firstAttribute="centerX" secondItem="zYF-fN-5Qe" secondAttribute="centerX" id="kDU-Y5-AZS"/>
+                            <constraint firstItem="aTe-bg-sFH" firstAttribute="top" secondItem="QCM-K6-hCN" secondAttribute="bottom" priority="700" constant="40" id="lZ7-B3-Jut"/>
+                            <constraint firstItem="PJH-yA-69b" firstAttribute="top" relation="greaterThanOrEqual" secondItem="aTe-bg-sFH" secondAttribute="bottom" constant="20" id="oGh-JD-Gpn"/>
+                            <constraint firstItem="EIL-wY-bNA" firstAttribute="centerX" secondItem="zYF-fN-5Qe" secondAttribute="centerX" id="ypl-cx-SsS"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="polygonDescriptionLabel" destination="QCM-K6-hCN" id="Eb0-6S-j4P"/>
+                        <outlet property="polygonView" destination="aTe-bg-sFH" id="8cv-ew-NZF"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="NiH-7O-ywP" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="855" y="601"/>
+        </scene>
+    </scenes>
+</document>
