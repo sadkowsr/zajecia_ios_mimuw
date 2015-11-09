@@ -26,4 +26,5 @@
 ##Kontakt i prace domowe
 
 Michał Dąbrowski
+
 michal.dabrowski-at-daftcode.pl
