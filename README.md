@@ -21,7 +21,11 @@
 
 ### Zajęcia 2 (9.11.2015): UIView + Core Graphics
 
+[Polygon Drawing](#)
 
+#### Praca domowa:
+
+##### Dodaj [UISlider](https://developer.apple.com/library/prerelease/ios/documentation/UIKit/Reference/UISlider_Class/index.html) do naszej aplikacji
 
 ##Kontakt i prace domowe
 
