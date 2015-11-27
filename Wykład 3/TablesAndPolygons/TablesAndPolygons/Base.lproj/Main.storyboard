@@ -1,0 +1,252 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9059" systemVersion="15B42" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="ewJ-xd-E2c">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9049"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--Polygon prieview-->
+        <scene sceneID="XOs-qz-TCg">
+            <objects>
+                <viewController storyboardIdentifier="PolygonPreviewViewController" title="Polygon prieview" id="M3w-5e-WEZ" customClass="PolygonPreviewViewController" customModule="TablesAndPolygons" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="bRd-Dn-y0c"/>
+                        <viewControllerLayoutGuide type="bottom" id="PJH-yA-69b"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="zYF-fN-5Qe">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view opaque="NO" contentMode="scaleToFill" placeholderIntrinsicWidth="200" placeholderIntrinsicHeight="200" translatesAutoresizingMaskIntoConstraints="NO" id="aTe-bg-sFH" customClass="PolygonView" customModule="TablesAndPolygons" customModuleProvider="target">
+                                <rect key="frame" x="133" y="124" width="335" height="335"/>
+                                <animations/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="aTe-bg-sFH" secondAttribute="height" id="9z0-Nv-L0c"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="strokeColor">
+                                        <color key="value" red="0.96470588239999999" green="0.36862745099999999" blue="0.25490196079999999" alpha="1" colorSpace="calibratedRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="fillColor">
+                                        <color key="value" red="0.96470588239999999" green="0.36862745099999999" blue="0.25490196079999999" alpha="0.29999999999999999" colorSpace="calibratedRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="lineWidth">
+                                        <real key="value" value="2"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="numberOfSides">
+                                        <integer key="value" value="7"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="n-sided polygon" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QCM-K6-hCN">
+                                <rect key="frame" x="209" y="74" width="182" height="30"/>
+                                <animations/>
+                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <stackView opaque="NO" contentMode="scaleToFill" spacing="60" translatesAutoresizingMaskIntoConstraints="NO" id="EIL-wY-bNA">
+                                <rect key="frame" x="240" y="469" width="121" height="72"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7oR-Hq-Ooa">
+                                        <rect key="frame" x="0.0" y="0.0" width="30" height="72"/>
+                                        <animations/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="50"/>
+                                        <state key="normal" title="-"/>
+                                        <connections>
+                                            <action selector="minusButtonPressed:" destination="M3w-5e-WEZ" eventType="touchUpInside" id="NTS-By-5us"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lZU-JH-Ysq">
+                                        <rect key="frame" x="90" y="0.0" width="31" height="72"/>
+                                        <animations/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="50"/>
+                                        <state key="normal" title="+"/>
+                                        <connections>
+                                            <action selector="plusButtonPressed:" destination="M3w-5e-WEZ" eventType="touchUpInside" id="3td-dE-Zl0"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <animations/>
+                                <color key="backgroundColor" red="0.36470588240000001" green="0.75686274509999996" blue="0.43921568630000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </stackView>
+                        </subviews>
+                        <animations/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="aTe-bg-sFH" firstAttribute="width" secondItem="zYF-fN-5Qe" secondAttribute="width" priority="690" id="7lT-ef-P8F"/>
+                            <constraint firstItem="aTe-bg-sFH" firstAttribute="centerX" secondItem="zYF-fN-5Qe" secondAttribute="centerX" id="8AP-Oy-iVf"/>
+                            <constraint firstItem="PJH-yA-69b" firstAttribute="top" secondItem="EIL-wY-bNA" secondAttribute="bottom" constant="10" id="FL1-Na-P6s"/>
+                            <constraint firstItem="EIL-wY-bNA" firstAttribute="top" secondItem="aTe-bg-sFH" secondAttribute="bottom" constant="10" id="Qg1-NV-Oet"/>
+                            <constraint firstAttribute="trailingMargin" relation="greaterThanOrEqual" secondItem="aTe-bg-sFH" secondAttribute="trailing" constant="20" id="VCk-ma-2SW"/>
+                            <constraint firstItem="QCM-K6-hCN" firstAttribute="top" secondItem="bRd-Dn-y0c" secondAttribute="bottom" constant="10" id="aK2-JI-YWb"/>
+                            <constraint firstItem="aTe-bg-sFH" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="zYF-fN-5Qe" secondAttribute="leadingMargin" constant="20" id="dBg-Hv-UlA"/>
+                            <constraint firstItem="QCM-K6-hCN" firstAttribute="centerX" secondItem="zYF-fN-5Qe" secondAttribute="centerX" id="kDU-Y5-AZS"/>
+                            <constraint firstItem="aTe-bg-sFH" firstAttribute="top" relation="greaterThanOrEqual" secondItem="QCM-K6-hCN" secondAttribute="bottom" constant="20" id="lZ7-B3-Jut"/>
+                            <constraint firstItem="EIL-wY-bNA" firstAttribute="centerX" secondItem="zYF-fN-5Qe" secondAttribute="centerX" id="ypl-cx-SsS"/>
+                        </constraints>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Polygon preview" image="Square" id="7uX-CZ-cBv"/>
+                    <connections>
+                        <outlet property="minusButton" destination="7oR-Hq-Ooa" id="o75-9f-ic9"/>
+                        <outlet property="plusButton" destination="lZU-JH-Ysq" id="ORd-Yc-n8J"/>
+                        <outlet property="polygonDescriptionLabel" destination="QCM-K6-hCN" id="Eb0-6S-j4P"/>
+                        <outlet property="polygonView" destination="aTe-bg-sFH" id="8cv-ew-NZF"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="NiH-7O-ywP" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1631" y="91"/>
+        </scene>
+        <!--Polygons Table View-->
+        <scene sceneID="chj-sH-YYz">
+            <objects>
+                <viewController id="C82-Xc-fTK" customClass="PolygonsTableViewController" customModule="TablesAndPolygons" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="hsU-vc-6Dr"/>
+                        <viewControllerLayoutGuide type="bottom" id="hxM-eX-bX1"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="76L-Fs-XrC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="60" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="mP9-mh-22V">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                                <animations/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="polygon cell" id="o8I-5i-fOc" customClass="PolygonTableViewCell" customModule="TablesAndPolygons" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="92" width="600" height="60"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="o8I-5i-fOc" id="Ecg-fd-UZg">
+                                            <rect key="frame" x="0.0" y="0.0" width="600" height="59"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Polygon with 3 sides" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Pv3-4U-rqz">
+                                                    <rect key="frame" x="85" y="19" width="158" height="21"/>
+                                                    <animations/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <view contentMode="scaleToFill" placeholderIntrinsicWidth="58" placeholderIntrinsicHeight="58" translatesAutoresizingMaskIntoConstraints="NO" id="Obz-DD-w12" customClass="PolygonView" customModule="TablesAndPolygons" customModuleProvider="target">
+                                                    <rect key="frame" x="8" y="1" width="57" height="57"/>
+                                                    <animations/>
+                                                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" secondItem="Obz-DD-w12" secondAttribute="height" multiplier="1:1" id="l64-Ct-0B9"/>
+                                                    </constraints>
+                                                    <userDefinedRuntimeAttributes>
+                                                        <userDefinedRuntimeAttribute type="color" keyPath="strokeColor">
+                                                            <color key="value" red="0.89914397089999898" green="0.0" blue="0.082352941179999917" alpha="1" colorSpace="calibratedRGB"/>
+                                                        </userDefinedRuntimeAttribute>
+                                                        <userDefinedRuntimeAttribute type="number" keyPath="lineWidth">
+                                                            <real key="value" value="1"/>
+                                                        </userDefinedRuntimeAttribute>
+                                                        <userDefinedRuntimeAttribute type="color" keyPath="fillColor">
+                                                            <color key="value" red="0.89803921568627454" green="0.066666666666666666" blue="0.082352941176470587" alpha="0.29999999999999999" colorSpace="calibratedRGB"/>
+                                                        </userDefinedRuntimeAttribute>
+                                                        <userDefinedRuntimeAttribute type="number" keyPath="numberOfSides">
+                                                            <integer key="value" value="3"/>
+                                                        </userDefinedRuntimeAttribute>
+                                                    </userDefinedRuntimeAttributes>
+                                                </view>
+                                            </subviews>
+                                            <animations/>
+                                            <constraints>
+                                                <constraint firstItem="Pv3-4U-rqz" firstAttribute="centerY" secondItem="Ecg-fd-UZg" secondAttribute="centerY" id="J9t-zF-AXv"/>
+                                                <constraint firstItem="Obz-DD-w12" firstAttribute="top" secondItem="Ecg-fd-UZg" secondAttribute="top" constant="1" id="MOg-QY-KxR"/>
+                                                <constraint firstItem="Obz-DD-w12" firstAttribute="centerY" secondItem="Ecg-fd-UZg" secondAttribute="centerY" id="Mvn-lv-As8"/>
+                                                <constraint firstAttribute="bottom" secondItem="Obz-DD-w12" secondAttribute="bottom" constant="1" id="QZG-eG-vxs"/>
+                                                <constraint firstAttribute="trailingMargin" relation="greaterThanOrEqual" secondItem="Pv3-4U-rqz" secondAttribute="trailing" constant="10" id="RMg-QH-tUB"/>
+                                                <constraint firstItem="Pv3-4U-rqz" firstAttribute="leading" secondItem="Obz-DD-w12" secondAttribute="trailing" constant="20" id="hUU-WE-dGF"/>
+                                                <constraint firstItem="Obz-DD-w12" firstAttribute="leading" secondItem="Ecg-fd-UZg" secondAttribute="leadingMargin" id="mlm-2a-OVd"/>
+                                            </constraints>
+                                            <variation key="default">
+                                                <mask key="constraints">
+                                                    <exclude reference="Mvn-lv-As8"/>
+                                                </mask>
+                                            </variation>
+                                        </tableViewCellContentView>
+                                        <animations/>
+                                        <connections>
+                                            <outlet property="polygonTitleLabel" destination="Pv3-4U-rqz" id="4SA-EG-DNC"/>
+                                            <outlet property="polygonView" destination="Obz-DD-w12" id="dVz-2o-FWf"/>
+                                            <segue destination="M3w-5e-WEZ" kind="show" identifier="showDetail" id="xnN-Kg-70z"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </prototypes>
+                                <connections>
+                                    <outlet property="dataSource" destination="C82-Xc-fTK" id="Phe-MD-s86"/>
+                                    <outlet property="delegate" destination="C82-Xc-fTK" id="IQe-Si-pvz"/>
+                                </connections>
+                            </tableView>
+                        </subviews>
+                        <animations/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="bottomMargin" secondItem="mP9-mh-22V" secondAttribute="bottom" id="720-fi-9Uz"/>
+                            <constraint firstItem="mP9-mh-22V" firstAttribute="leading" secondItem="76L-Fs-XrC" secondAttribute="leading" id="VXK-oA-Oj2"/>
+                            <constraint firstItem="mP9-mh-22V" firstAttribute="top" secondItem="76L-Fs-XrC" secondAttribute="topMargin" id="iOb-3H-eoX"/>
+                            <constraint firstAttribute="trailing" secondItem="mP9-mh-22V" secondAttribute="trailing" id="mF7-ql-cYf"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Polygons Table View" id="e7P-xk-cvL"/>
+                    <connections>
+                        <outlet property="tableView" destination="mP9-mh-22V" id="Syb-xR-zVf"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="SiM-yw-Upq" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1932" y="1421"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="tKC-KA-dAL">
+            <objects>
+                <tabBarController id="ewJ-xd-E2c" sceneMemberID="viewController">
+                    <tabBar key="tabBar" contentMode="scaleToFill" id="lqk-dc-91H">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="49"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <animations/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="ESw-NF-QMn" kind="relationship" relationship="viewControllers" id="VbI-hr-UxB"/>
+                        <segue destination="M3w-5e-WEZ" kind="relationship" relationship="viewControllers" id="gDG-01-Iye"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="bRV-SG-UxW" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="300" y="1091"/>
+        </scene>
+        <!--Polygons-->
+        <scene sceneID="dFE-RE-IFn">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="ESw-NF-QMn" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Polygons" image="Hexes" id="ti2-b4-p3J"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="710-pI-zwk">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <animations/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="C82-Xc-fTK" kind="relationship" relationship="rootViewController" id="gxY-px-Y3u"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="aK2-XS-iPb" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1120" y="1421"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Hexes" width="35" height="35"/>
+        <image name="Square" width="35" height="35"/>
+    </resources>
+    <inferredMetricsTieBreakers>
+        <segue reference="xnN-Kg-70z"/>
+    </inferredMetricsTieBreakers>
+</document>
