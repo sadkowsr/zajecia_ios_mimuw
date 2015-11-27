@@ -29,7 +29,7 @@
 
 ### Zajęcia 3 (23.11.2015): UITableView + AutoLayout
 
-[Polygon Drawing PART 2](../../tree/master/Wyklad%203/TablesAndPolygons/)
+[Polygon Drawing PART 2](../../tree/master/Wykład%203/TablesAndPolygons)
 
 
 ##Kontakt i prace domowe
