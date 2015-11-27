@@ -27,6 +27,11 @@
 
 ##### Dodaj [UISlider](https://developer.apple.com/library/prerelease/ios/documentation/UIKit/Reference/UISlider_Class/index.html) do naszej aplikacji
 
+### Zajęcia 3 (23.11.2015): UITableView + AutoLayout
+
+[Polygon Drawing PART 2](../../tree/master/Wyklad%203/TablesAndPolygons/)
+
+
 ##Kontakt i prace domowe
 
 Michał Dąbrowski
