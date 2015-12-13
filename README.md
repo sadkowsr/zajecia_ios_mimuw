@@ -31,6 +31,10 @@
 
 [Polygon Drawing PART 2](../../tree/master/Wykład%203/TablesAndPolygons)
 
+### Zajęcia 4 (7.12.2015): UIGestureRecognizer
+[Polygon Gestures](../../tree/master/Wykład%204/PolygonsGestures)
+#### Praca domowa:
+##### Zaimplementować pinch, rotation
 
 ##Kontakt i prace domowe
 
