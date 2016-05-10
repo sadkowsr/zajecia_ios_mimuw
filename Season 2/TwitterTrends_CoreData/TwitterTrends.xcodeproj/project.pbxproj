@@ -11,6 +11,7 @@
 		A34106661CD10F89001CBA99 /* Trends.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = A34106641CD10F89001CBA99 /* Trends.xcdatamodeld */; };
 		A341066A1CD10FE3001CBA99 /* Trend+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = A34106681CD10FE3001CBA99 /* Trend+CoreDataProperties.swift */; };
 		A341066B1CD10FE3001CBA99 /* Trend.swift in Sources */ = {isa = PBXBuildFile; fileRef = A34106691CD10FE3001CBA99 /* Trend.swift */; };
+		A34F78DC1CE22B76006B8CA3 /* RemoteTrendsLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = A34F78DB1CE22B76006B8CA3 /* RemoteTrendsLoader.swift */; };
 		A3EBF8A11C84C3730091E625 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3EBF8A01C84C3730091E625 /* AppDelegate.swift */; };
 		A3EBF8A31C84C3730091E625 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3EBF8A21C84C3730091E625 /* ViewController.swift */; };
 		A3EBF8A61C84C3730091E625 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A3EBF8A41C84C3730091E625 /* Main.storyboard */; };
@@ -26,6 +27,7 @@
 		A34106651CD10F89001CBA99 /* Trends.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Trends.xcdatamodel; sourceTree = "<group>"; };
 		A34106681CD10FE3001CBA99 /* Trend+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Trend+CoreDataProperties.swift"; sourceTree = "<group>"; };
 		A34106691CD10FE3001CBA99 /* Trend.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Trend.swift; sourceTree = "<group>"; };
+		A34F78DB1CE22B76006B8CA3 /* RemoteTrendsLoader.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RemoteTrendsLoader.swift; sourceTree = "<group>"; };
 		A3EBF89D1C84C3730091E625 /* TwitterTrends.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TwitterTrends.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A3EBF8A01C84C3730091E625 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A3EBF8A21C84C3730091E625 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -84,6 +86,7 @@
 				A34106621CD10F7C001CBA99 /* CoreDataManager.swift */,
 				A34106641CD10F89001CBA99 /* Trends.xcdatamodeld */,
 				A3EBF8B41C84C38F0091E625 /* TrendsLoader.swift */,
+				A34F78DB1CE22B76006B8CA3 /* RemoteTrendsLoader.swift */,
 				A3EBF8A41C84C3730091E625 /* Main.storyboard */,
 				A3EBF8A71C84C3730091E625 /* Assets.xcassets */,
 				A3EBF8A91C84C3730091E625 /* LaunchScreen.storyboard */,
@@ -169,6 +172,7 @@
 				A341066A1CD10FE3001CBA99 /* Trend+CoreDataProperties.swift in Sources */,
 				A3EBF8B51C84C38F0091E625 /* TrendsLoader.swift in Sources */,
 				A341066B1CD10FE3001CBA99 /* Trend.swift in Sources */,
+				A34F78DC1CE22B76006B8CA3 /* RemoteTrendsLoader.swift in Sources */,
 				A3EBF8A11C84C3730091E625 /* AppDelegate.swift in Sources */,
 				A34106631CD10F7C001CBA99 /* CoreDataManager.swift in Sources */,
 				A3EBF8B71C84C8EC0091E625 /* TrendCell.swift in Sources */,

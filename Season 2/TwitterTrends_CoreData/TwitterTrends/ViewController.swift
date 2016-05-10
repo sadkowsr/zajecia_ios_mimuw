@@ -12,7 +12,7 @@ import CoreData
 
 class ViewController: UIViewController {
 
-	private let trendsLoader: TrendsLoader = TrendsLoaderLocal(fileName: "trends")
+	private let trendsLoader: TrendsLoader = RemoteTrendsLoader(urlString: "https://dl.dropboxusercontent.com/u/61183547/trends_new.json")
 	private let coreDataManager: CoreDataManager = CoreDataManager()
 
 	override func viewDidLoad() {
