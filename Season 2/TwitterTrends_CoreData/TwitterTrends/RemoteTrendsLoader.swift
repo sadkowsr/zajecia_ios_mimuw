@@ -29,17 +29,22 @@ class RemoteTrendsLoader: TrendsLoader
 		//Tworzymy DATA TASK – przy pomocy url session – zadanie które session wykona
 		//argument – completion block - to co się stanie po wykonaniu zapytania
 		let dataTask: NSURLSessionDataTask = self.urlSession.dataTaskWithURL(self.urlToLoad) { (data: NSData?, response: NSURLResponse?, error: NSError?) in
+			let completionClosureInMainQueue: ((NSDictionary?) -> Void) = { (trends: NSDictionary?) -> Void in
+				dispatch_async(dispatch_get_main_queue(), { 
+					completion(loadedTrends: trends)
+				})
+			}
 			
 			//Zapewniamy, że response jest typu NSHTTPURLResponse oraz że statusCode jest 200 (nie ma błędów)
 			guard let response = response as? NSHTTPURLResponse where response.statusCode == 200 else {
 				//Jeśli jeden z warunków nie jest spełniony, wywołujemy completion(nil) – żeby wywołujący wiedzial że coś się nie powiodło
-				completion(loadedTrends: nil)
+				completionClosureInMainQueue(nil)
 				return
 			}
 			
 			//j.w.
 			guard let data = data else {
-				completion(loadedTrends: nil)
+				completionClosureInMainQueue(nil)
 				return
 			}
 			//blok DO – do łapania wyjątków
@@ -47,16 +52,16 @@ class RemoteTrendsLoader: TrendsLoader
 				//parsowanie JSON'a przy pomocy NSJSONSerialization
 				if let json: NSDictionary = try NSJSONSerialization.JSONObjectWithData(data, options: []) as? NSDictionary {
 					//Jeśli się udało i jeśli dostaliśmy NSDictionary – informujemy wywołującego uruchamiając przekazany nam completion block
-					completion(loadedTrends: json)
+					completionClosureInMainQueue(json)
 					return
 				} else {
 					//Jeśli się nie udało – w danych nie było NSDictionary - informujemy o błędzie
-					completion(loadedTrends: nil)
+					completionClosureInMainQueue(nil)
 					return
 				}
 			} catch {
 				//Niepoprawny JSON w data
-				completion(loadedTrends: nil)
+				completionClosureInMainQueue(nil)
 			}
 		}
 		
