@@ -47,6 +47,8 @@ extension Trend
 //			print("INSERTING NEW TREND FOR NAME \(name)")
 			trendToReturn = NSEntityDescription.insertNewObjectForEntityForName("Trend", inManagedObjectContext: managedObjectContext) as? Trend
 			trendToReturn?.name = name
+//			To nie powinno tak być. Tylko dla łatwości. Tak naprawdę firstLetter powinno być transient.
+			trendToReturn?.firstLetter = name.substringToIndex(name.startIndex.advancedBy(1)).uppercaseString
 		} else {
 //			Nic nie musimy robić
 //			print("FOUND TREND WITH NAME \(name)")

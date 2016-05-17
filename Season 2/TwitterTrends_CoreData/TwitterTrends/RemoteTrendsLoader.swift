@@ -59,8 +59,9 @@ class RemoteTrendsLoader: TrendsLoader
 					completionClosureInMainQueue(nil)
 					return
 				}
-			} catch {
+			} catch let error{
 				//Niepoprawny JSON w data
+				print(error)
 				completionClosureInMainQueue(nil)
 			}
 		}

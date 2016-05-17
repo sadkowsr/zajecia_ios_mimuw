@@ -29,20 +29,15 @@ class ViewController: UIViewController {
 			
 			//completion block. Wykonuje się z trendsLoadera w momencie, kiedy zakończy wczytywanie
 			
-//			print(trends)
-			
 //			Jeśli trendy faktycznie są, i jeśli core data manager nie jest nilem
 			if let loadedTrends = loadedTrends, coreDataManager = coreDataManager {
 //				Parsujemy
-				let parsedTrends: [Trend] = Trend.createOrUpdateTrendsForLoadedFullJSON(loadedTrends, inManagedObjectContext: coreDataManager.managedObjectContext)
-//				Wyciągamy NAZWY (tylko na potrzeby debugu)
-				let parsedTrendsNames: [String] = parsedTrends.map{$0.name!}
-				print(parsedTrendsNames)
-				
+				Trend.createOrUpdateTrendsForLoadedFullJSON(loadedTrends, inManagedObjectContext: coreDataManager.managedObjectContext)
+//
 //				Opcjonalnie możemy teraz zapisać:
 				coreDataManager.saveContext()
 				
-				//być może potrzebujemy jakoś zareagować – na przykład odświeżyć UITableView
+//				być może potrzebujemy jakoś zareagować – na przykład odświeżyć UITableView
 				self?.dataChanged()
 			}
 		}
@@ -50,7 +45,6 @@ class ViewController: UIViewController {
 	
 	private func dataChanged() -> Void {
 		//TODO
-		self.refreshTableView()
 	}
 	
 	func refreshTableView() -> Void {
@@ -58,10 +52,10 @@ class ViewController: UIViewController {
 	}
 }
 
-
 extension ViewController: UITableViewDataSource
 {
 	func numberOfSectionsInTableView(tableView: UITableView) -> Int {
+		//TODO
 		return 1
 	}
 	
@@ -73,6 +67,13 @@ extension ViewController: UITableViewDataSource
 	func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
 		//TODO
 		let cell: TrendCell = tableView.dequeueReusableCellWithIdentifier("TREND_CELL") as! TrendCell
+		
+		//TODO: Configure Cell
 		return cell
+	}
+	
+	func tableView(tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
+		//TODO
+		return nil
 	}
 }

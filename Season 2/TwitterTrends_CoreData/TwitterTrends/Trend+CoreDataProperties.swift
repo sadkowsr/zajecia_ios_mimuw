@@ -18,5 +18,6 @@ extension Trend {
     @NSManaged var name: String?
     @NSManaged var tweetVolume: NSNumber?
     @NSManaged var query: String?
+	@NSManaged var firstLetter: String?
 
 }
